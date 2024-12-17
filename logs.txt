@@ -1,0 +1,483 @@
+Query ID = root_20241208082222_08a26502-00d8-4558-b9d0-56632ea09fd8
+Total jobs = 3
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]     
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20241208082222_08a26502-00d8-4558-b9d0-56632ea09fd8.log
+2024-12-08 08:22:32     Starting to launch local task to process map join;     maximum memory = 477626368
+2024-12-08 08:22:33     Dump the side-table for tag: 1 with group count: 3248 into file: file:/tmp/root/7bda4480-5b09-407a-a9cd-d3fefc1fe196/hive_2024-12-08_08-22-22_227_166649981851227233-1/-local-10007/HashTable-Stage-2/MapJoin-mapfile01--.hashtable
+2024-12-08 08:22:34     Uploaded 1 File to: file:/tmp/root/7bda4480-5b09-407a-a9cd-d3fefc1fe196/hive_2024-12-08_08-22-22_227_166649981851227233-1/-local-10007/HashTable-Stage-2/MapJoin-mapfile01--.hashtable (81858 bytes)
+2024-12-08 08:22:34     End of local task; Time Taken: 1.384 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 17
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 08:22:37,187 Stage-2 map = 0%,  reduce = 0%
+2024-12-08 08:22:40,218 Stage-2 map = 100%,  reduce = 0%
+2024-12-08 08:23:23,559 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_local770178359_0001
+Launching Job 2 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 08:23:26,428 Stage-3 map = 100%,  reduce = 100%
+Ended Job = job_local1301364299_0002
+Launching Job 3 out of 3
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 08:23:28,149 Stage-4 map = 100%,  reduce = 100%
+Ended Job = job_local1813048463_0003
+MapReduce Jobs Launched:
+Stage-Stage-2:  HDFS Read: 107593667460 HDFS Write: 0 SUCCESS
+Stage-Stage-3:  HDFS Read: 8375603300 HDFS Write: 0 SUCCESS
+Stage-Stage-4:  HDFS Read: 8375603300 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+2023-01-04      AMERICAN EXPRESS COMPANY        13      147.12  NULL
+2023-01-05      AMERICAN EXPRESS COMPANY        9       150.54  3.4199982
+2023-01-06      AMERICAN EXPRESS COMPANY        14      146.43  -4.1100006
+2023-01-07      AMERICAN EXPRESS COMPANY        8       150.17  3.7400055
+2023-01-10      AMERICAN EXPRESS COMPANY        12      150.4   0.22999573
+2023-01-11      AMERICAN EXPRESS COMPANY        14      152.0   1.6000061
+2023-01-12      AMERICAN EXPRESS COMPANY        11      153.92  1.9199982
+2023-01-13      AMERICAN EXPRESS COMPANY        9       154.92  1.0
+2023-01-14      AMERICAN EXPRESS COMPANY        5       155.76  0.83999634
+2023-01-18      AMERICAN EXPRESS COMPANY        6       153.75  -2.0099945
+2023-01-19      AMERICAN EXPRESS COMPANY        10      150.42  -3.3300018
+2023-01-20      AMERICAN EXPRESS COMPANY        8       146.85  -3.569992
+2023-01-21      AMERICAN EXPRESS COMPANY        7       151.6   4.75
+2023-01-24      AMERICAN EXPRESS COMPANY        16      154.0   2.399994
+2023-01-25      AMERICAN EXPRESS COMPANY        8       155.33  1.3300018
+2023-01-26      AMERICAN EXPRESS COMPANY        7       156.77  1.4400024
+2023-01-27      AMERICAN EXPRESS COMPANY        11      155.88  -0.8899994
+2023-01-28      AMERICAN EXPRESS COMPANY        4       172.31  16.429993
+2023-01-31      AMERICAN EXPRESS COMPANY        9       172.66  0.3500061
+2023-02-01      AMERICAN EXPRESS COMPANY        14      174.93  2.269989
+2023-02-02      AMERICAN EXPRESS COMPANY        12      173.61  -1.3199921
+2023-02-03      AMERICAN EXPRESS COMPANY        9       173.13  -0.47999573
+2023-02-04      AMERICAN EXPRESS COMPANY        6       178.86  5.7299957
+2023-02-07      AMERICAN EXPRESS COMPANY        13      176.48  -2.380005
+2023-02-08      AMERICAN EXPRESS COMPANY        10      178.7   2.2200012
+2023-02-09      AMERICAN EXPRESS COMPANY        9       179.0   0.30000305
+2023-02-10      AMERICAN EXPRESS COMPANY        15      179.37  0.36999512
+2023-02-11      AMERICAN EXPRESS COMPANY        7       179.25  -0.11999512
+2023-02-14      AMERICAN EXPRESS COMPANY        17      181.33  2.0800018
+2023-02-15      AMERICAN EXPRESS COMPANY        8       181.02  -0.30999756
+2023-02-16      AMERICAN EXPRESS COMPANY        8       180.67  -0.3500061
+2023-02-17      AMERICAN EXPRESS COMPANY        8       177.94  -2.7299957
+2023-02-18      AMERICAN EXPRESS COMPANY        3       177.3   -0.6399994
+2023-02-22      AMERICAN EXPRESS COMPANY        11      173.48  -3.8200073
+2023-02-23      AMERICAN EXPRESS COMPANY        9       174.7   1.2200012
+2023-02-24      AMERICAN EXPRESS COMPANY        13      175.14  0.44000244
+2023-02-25      AMERICAN EXPRESS COMPANY        6       174.25  -0.8899994
+2023-02-28      AMERICAN EXPRESS COMPANY        19      173.3   -0.94999695
+2023-03-01      AMERICAN EXPRESS COMPANY        10      173.99  0.69000244
+2023-03-02      AMERICAN EXPRESS COMPANY        10      175.91  1.9199982
+2023-03-03      AMERICAN EXPRESS COMPANY        13      175.34  -0.5700073
+2023-03-04      AMERICAN EXPRESS COMPANY        9       179.09  3.75
+2023-03-07      AMERICAN EXPRESS COMPANY        9       179.06  -0.02999878
+2023-03-08      AMERICAN EXPRESS COMPANY        10      175.32  -3.7399902
+2023-03-09      AMERICAN EXPRESS COMPANY        8       174.83  -0.4900055
+2023-03-10      AMERICAN EXPRESS COMPANY        9       172.12  -2.7100067
+2023-03-11      AMERICAN EXPRESS COMPANY        5       165.7   -6.419998
+2023-03-14      AMERICAN EXPRESS COMPANY        13      157.63  -8.069992
+2023-03-15      AMERICAN EXPRESS COMPANY        11      163.91  6.279999
+2023-03-16      AMERICAN EXPRESS COMPANY        12      159.81  -4.100006
+2023-03-17      AMERICAN EXPRESS COMPANY        12      160.73  0.91999817
+2023-03-18      AMERICAN EXPRESS COMPANY        4       156.52  -4.2099915
+2023-03-21      AMERICAN EXPRESS COMPANY        6       158.74  2.2200012
+2023-03-22      AMERICAN EXPRESS COMPANY        17      164.56  5.819992
+2023-03-23      AMERICAN EXPRESS COMPANY        14      162.75  -1.8099976
+2023-03-24      AMERICAN EXPRESS COMPANY        7       162.76  0.009994507
+2023-03-25      AMERICAN EXPRESS COMPANY        4       159.78  -2.9799957
+2023-03-28      AMERICAN EXPRESS COMPANY        7       163.12  3.3399963
+2023-03-29      AMERICAN EXPRESS COMPANY        12      159.21  -3.9099884
+2023-03-30      AMERICAN EXPRESS COMPANY        12      163.59  4.3799896
+2023-03-31      AMERICAN EXPRESS COMPANY        10      162.41  -1.1799927
+2023-04-01      AMERICAN EXPRESS COMPANY        6       164.95  2.5399933
+2023-04-04      AMERICAN EXPRESS COMPANY        8       163.78  -1.1699982
+2023-04-05      AMERICAN EXPRESS COMPANY        9       162.56  -1.2200012
+2023-04-06      AMERICAN EXPRESS COMPANY        10      161.08  -1.4799957
+2023-04-07      AMERICAN EXPRESS COMPANY        9       158.83  -2.25
+2023-04-11      AMERICAN EXPRESS COMPANY        9       161.14  2.3099976
+2023-04-12      AMERICAN EXPRESS COMPANY        14      161.83  0.69000244
+2023-04-13      AMERICAN EXPRESS COMPANY        7       159.29  -2.5400085
+2023-04-14      AMERICAN EXPRESS COMPANY        10      162.3   3.0100098
+2023-04-15      AMERICAN EXPRESS COMPANY        7       163.22  0.91999817
+2023-04-18      AMERICAN EXPRESS COMPANY        10      163.71  0.4900055
+2023-04-19      AMERICAN EXPRESS COMPANY        13      164.4   0.6899872
+2023-04-20      AMERICAN EXPRESS COMPANY        14      164.95  0.55000305
+2023-04-21      AMERICAN EXPRESS COMPANY        14      163.28  -1.6699982
+2023-04-22      AMERICAN EXPRESS COMPANY        7       163.78  0.5
+2023-04-25      AMERICAN EXPRESS COMPANY        9       160.59  -3.1900024
+2023-04-26      AMERICAN EXPRESS COMPANY        10      156.12  -4.470001
+2023-04-27      AMERICAN EXPRESS COMPANY        15      155.72  -0.3999939
+2023-04-28      AMERICAN EXPRESS COMPANY        6       158.45  2.7299957
+2023-04-29      AMERICAN EXPRESS COMPANY        8       161.34  2.8899994
+2023-05-02      AMERICAN EXPRESS COMPANY        10      159.32  -2.019989
+2023-05-03      AMERICAN EXPRESS COMPANY        15      153.25  -6.0700073
+2023-05-04      AMERICAN EXPRESS COMPANY        14      152.21  -1.0399933
+2023-05-05      AMERICAN EXPRESS COMPANY        10      148.81  -3.4000092
+2023-05-06      AMERICAN EXPRESS COMPANY        7       152.65  3.8399963
+2023-05-09      AMERICAN EXPRESS COMPANY        12      153.04  0.3899994
+2023-05-10      AMERICAN EXPRESS COMPANY        14      153.38  0.3400116
+2023-05-11      AMERICAN EXPRESS COMPANY        15      148.68  -4.700012
+2023-05-12      AMERICAN EXPRESS COMPANY        14      147.99  -0.6899872
+2023-05-13      AMERICAN EXPRESS COMPANY        6       147.93  -0.060012817
+2023-05-16      AMERICAN EXPRESS COMPANY        18      150.0   2.0700073
+2023-05-17      AMERICAN EXPRESS COMPANY        12      148.41  -1.5899963
+2023-05-18      AMERICAN EXPRESS COMPANY        13      152.09  3.6799927
+2023-05-19      AMERICAN EXPRESS COMPANY        12      153.48  1.3899994
+2023-05-20      AMERICAN EXPRESS COMPANY        5       152.95  -0.5299988
+2023-05-23      AMERICAN EXPRESS COMPANY        15      155.51  2.5599976
+2023-05-24      AMERICAN EXPRESS COMPANY        11      152.56  -2.949997
+2023-05-25      AMERICAN EXPRESS COMPANY        14      150.72  -1.8399963
+2023-05-26      AMERICAN EXPRESS COMPANY        16      151.08  0.3600006
+2023-05-27      AMERICAN EXPRESS COMPANY        5       157.24  6.1600037
+2023-05-31      AMERICAN EXPRESS COMPANY        13      158.01  0.769989
+2023-06-01      AMERICAN EXPRESS COMPANY        13      158.56  0.55000305
+2023-06-02      AMERICAN EXPRESS COMPANY        11      162.72  4.1600037
+2023-06-03      AMERICAN EXPRESS COMPANY        5       168.56  5.8399963
+2023-06-06      AMERICAN EXPRESS COMPANY        15      167.43  -1.1300049
+2023-06-07      AMERICAN EXPRESS COMPANY        12      171.82  4.3900146
+2023-06-08      AMERICAN EXPRESS COMPANY        5       171.55  -0.27000427
+2023-06-09      AMERICAN EXPRESS COMPANY        8       171.14  -0.41000366
+2023-06-10      AMERICAN EXPRESS COMPANY        9       171.72  0.58000183
+2023-06-13      AMERICAN EXPRESS COMPANY        11      173.64  1.9199982
+2023-06-14      AMERICAN EXPRESS COMPANY        13      175.14  1.5
+2023-06-15      AMERICAN EXPRESS COMPANY        14      174.47  -0.66999817
+2023-06-16      AMERICAN EXPRESS COMPANY        15      173.81  -0.66000366
+2023-06-17      AMERICAN EXPRESS COMPANY        7       172.21  -1.5999908
+2023-06-21      AMERICAN EXPRESS COMPANY        19      169.41  -2.800003
+2023-06-22      AMERICAN EXPRESS COMPANY        16      167.92  -1.4900055
+2023-06-23      AMERICAN EXPRESS COMPANY        16      168.26  0.33999634
+2023-06-24      AMERICAN EXPRESS COMPANY        9       168.07  -0.18998718
+2023-06-27      AMERICAN EXPRESS COMPANY        16      167.11  -0.9600067
+2023-06-28      AMERICAN EXPRESS COMPANY        9       168.19  1.0800018
+2023-06-29      AMERICAN EXPRESS COMPANY        12      169.78  1.5899963
+2023-06-30      AMERICAN EXPRESS COMPANY        6       172.08  2.300003
+2023-07-01      AMERICAN EXPRESS COMPANY        8       174.2   2.119995
+2023-07-04      AMERICAN EXPRESS COMPANY        2       175.44  1.2400055
+2023-07-06      AMERICAN EXPRESS COMPANY        10      175.57  0.13000488
+2023-07-07      AMERICAN EXPRESS COMPANY        14      170.94  -4.630005
+2023-07-08      AMERICAN EXPRESS COMPANY        9       169.8   -1.1399994
+2023-07-11      AMERICAN EXPRESS COMPANY        16      171.71  1.9100037
+2023-07-12      AMERICAN EXPRESS COMPANY        15      174.64  2.9299927
+2023-07-13      AMERICAN EXPRESS COMPANY        18      174.33  -0.30999756
+2023-07-14      AMERICAN EXPRESS COMPANY        6       174.24  -0.08999634
+2023-07-15      AMERICAN EXPRESS COMPANY        5       173.39  -0.8500061
+2023-07-18      AMERICAN EXPRESS COMPANY        14      175.39  2.0
+2023-07-19      AMERICAN EXPRESS COMPANY        13      178.04  2.649994
+2023-07-20      AMERICAN EXPRESS COMPANY        21      177.12  -0.91999817
+2023-07-21      AMERICAN EXPRESS COMPANY        7       177.11  -0.009994507
+2023-07-22      AMERICAN EXPRESS COMPANY        9       170.22  -6.8899994
+2023-07-25      AMERICAN EXPRESS COMPANY        14      167.79  -2.430008
+2023-07-26      AMERICAN EXPRESS COMPANY        11      166.5   -1.2899933
+2023-07-27      AMERICAN EXPRESS COMPANY        9       167.75  1.25
+2023-07-28      AMERICAN EXPRESS COMPANY        10      163.6   -4.149994
+2023-07-29      AMERICAN EXPRESS COMPANY        4       165.43  1.8299866
+2023-08-01      AMERICAN EXPRESS COMPANY        13      168.88  3.4500122
+2023-08-02      AMERICAN EXPRESS COMPANY        17      169.65  0.769989
+2023-08-03      AMERICAN EXPRESS COMPANY        11      166.75  -2.899994
+2023-08-04      AMERICAN EXPRESS COMPANY        15      166.41  -0.33999634
+2023-08-05      AMERICAN EXPRESS COMPANY        9       165.41  -1.0
+2023-08-08      AMERICAN EXPRESS COMPANY        12      166.96  1.550003
+2023-08-09      AMERICAN EXPRESS COMPANY        6       165.87  -1.0900116
+2023-08-10      AMERICAN EXPRESS COMPANY        11      163.82  -2.0499878
+2023-08-11      AMERICAN EXPRESS COMPANY        6       163.54  -0.28001404
+2023-08-12      AMERICAN EXPRESS COMPANY        7       165.27  1.730011
+2023-08-15      AMERICAN EXPRESS COMPANY        9       166.08  0.80999756
+2023-08-16      AMERICAN EXPRESS COMPANY        9       161.91  -4.169998
+2023-08-17      AMERICAN EXPRESS COMPANY        17      160.76  -1.1500092
+2023-08-18      AMERICAN EXPRESS COMPANY        13      160.58  -0.17999268
+2023-08-19      AMERICAN EXPRESS COMPANY        6       160.23  -0.3500061
+2023-08-22      AMERICAN EXPRESS COMPANY        11      160.88  0.65000916
+2023-08-23      AMERICAN EXPRESS COMPANY        18      159.08  -1.800003
+2023-08-24      AMERICAN EXPRESS COMPANY        14      159.44  0.3600006
+2023-08-25      AMERICAN EXPRESS COMPANY        8       157.79  -1.6500092
+2023-08-26      AMERICAN EXPRESS COMPANY        4       158.32  0.53001404
+2023-08-29      AMERICAN EXPRESS COMPANY        12      159.19  0.8699951
+2023-08-30      AMERICAN EXPRESS COMPANY        12      160.24  1.050003
+2023-08-31      AMERICAN EXPRESS COMPANY        8       160.17  -0.070007324
+2023-09-01      AMERICAN EXPRESS COMPANY        8       157.99  -2.1799927
+2023-09-02      AMERICAN EXPRESS COMPANY        2       159.62  1.6299896
+2023-09-06      AMERICAN EXPRESS COMPANY        17      160.0   0.38000488
+2023-09-07      AMERICAN EXPRESS COMPANY        13      158.0   -2.0
+2023-09-08      AMERICAN EXPRESS COMPANY        14      156.78  -1.2200012
+2023-09-09      AMERICAN EXPRESS COMPANY        11      157.43  0.6499939
+2023-09-12      AMERICAN EXPRESS COMPANY        25      157.83  0.40000916
+2023-09-13      AMERICAN EXPRESS COMPANY        12      158.5   0.66999817
+2023-09-14      AMERICAN EXPRESS COMPANY        7       159.14  0.6399994
+2023-09-15      AMERICAN EXPRESS COMPANY        22      161.78  2.6399994
+2023-09-16      AMERICAN EXPRESS COMPANY        11      163.75  1.9700012
+2023-09-19      AMERICAN EXPRESS COMPANY        21      159.63  -4.119995
+2023-09-20      AMERICAN EXPRESS COMPANY        15      159.35  -0.27999878
+2023-09-21      AMERICAN EXPRESS COMPANY        13      157.23  -2.1200104
+2023-09-22      AMERICAN EXPRESS COMPANY        19      154.71  -2.519989
+2023-09-23      AMERICAN EXPRESS COMPANY        12      153.08  -1.6300049
+2023-09-26      AMERICAN EXPRESS COMPANY        15      153.23  0.1499939
+2023-09-27      AMERICAN EXPRESS COMPANY        22      151.12  -2.1100006
+2023-09-28      AMERICAN EXPRESS COMPANY        18      149.9   -1.2200012
+2023-09-29      AMERICAN EXPRESS COMPANY        17      150.23  0.33000183
+2023-09-30      AMERICAN EXPRESS COMPANY        6       149.19  -1.0399933
+2023-10-03      AMERICAN EXPRESS COMPANY        9       149.48  0.2899933
+2023-10-04      AMERICAN EXPRESS COMPANY        23      145.05  -4.4299927
+2023-10-05      AMERICAN EXPRESS COMPANY        15      146.63  1.5800018
+2023-10-06      AMERICAN EXPRESS COMPANY        15      147.09  0.45999146
+2023-10-07      AMERICAN EXPRESS COMPANY        6       149.32  2.230011
+2023-10-10      AMERICAN EXPRESS COMPANY        29      148.82  -0.5
+2023-10-11      AMERICAN EXPRESS COMPANY        14      150.93  2.1099854
+2023-10-12      AMERICAN EXPRESS COMPANY        23      151.51  0.58000183
+2023-10-13      AMERICAN EXPRESS COMPANY        19      151.28  -0.22999573
+2023-10-14      AMERICAN EXPRESS COMPANY        9       151.1   -0.17999268
+2023-10-17      AMERICAN EXPRESS COMPANY        22      152.79  1.6899872
+2023-10-18      AMERICAN EXPRESS COMPANY        20      154.39  1.6000061
+2023-10-19      AMERICAN EXPRESS COMPANY        27      151.53  -2.8600006
+2023-10-20      AMERICAN EXPRESS COMPANY        16      149.62  -1.9100037
+2023-10-21      AMERICAN EXPRESS COMPANY        10      141.57  -8.049988
+2023-10-24      AMERICAN EXPRESS COMPANY        26      144.59  3.019989
+2023-10-25      AMERICAN EXPRESS COMPANY        18      144.42  -0.16999817
+2023-10-26      AMERICAN EXPRESS COMPANY        15      143.52  -0.8999939
+2023-10-27      AMERICAN EXPRESS COMPANY        19      143.34  -0.18000793
+2023-10-28      AMERICAN EXPRESS COMPANY        6       141.31  -2.0299988
+2023-10-31      AMERICAN EXPRESS COMPANY        18      143.27  1.9600067
+2023-11-01      AMERICAN EXPRESS COMPANY        19      146.03  2.7599945
+2023-11-02      AMERICAN EXPRESS COMPANY        18      146.45  0.41999817
+2023-11-03      AMERICAN EXPRESS COMPANY        14      150.85  4.400009
+2023-11-04      AMERICAN EXPRESS COMPANY        8       152.76  1.9099884
+2023-11-07      AMERICAN EXPRESS COMPANY        17      152.99  0.23001099
+2023-11-08      AMERICAN EXPRESS COMPANY        27      152.98  -0.010009766
+2023-11-09      AMERICAN EXPRESS COMPANY        18      153.01  0.02999878
+2023-11-10      AMERICAN EXPRESS COMPANY        18      152.37  -0.6399994
+2023-11-11      AMERICAN EXPRESS COMPANY        8       154.38  2.0100098
+2023-11-14      AMERICAN EXPRESS COMPANY        26      154.34  -0.040008545
+2023-11-15      AMERICAN EXPRESS COMPANY        17      156.91  2.5700073
+2023-11-16      AMERICAN EXPRESS COMPANY        17      159.43  2.519989
+2023-11-17      AMERICAN EXPRESS COMPANY        12      159.05  -0.37998962
+2023-11-18      AMERICAN EXPRESS COMPANY        11      162.56  3.5099945
+2023-11-21      AMERICAN EXPRESS COMPANY        19      163.85  1.2900085
+2023-11-22      AMERICAN EXPRESS COMPANY        21      162.29  -1.5600128
+2023-11-23      AMERICAN EXPRESS COMPANY        7       163.79  1.5
+2023-11-25      AMERICAN EXPRESS COMPANY        12      164.42  0.6300049
+2023-11-28      AMERICAN EXPRESS COMPANY        26      164.04  -0.38000488
+2023-11-29      AMERICAN EXPRESS COMPANY        21      165.66  1.6200104
+2023-11-30      AMERICAN EXPRESS COMPANY        19      167.43  1.769989
+2023-12-01      AMERICAN EXPRESS COMPANY        18      170.77  3.3400116
+2023-12-02      AMERICAN EXPRESS COMPANY        6       173.76  2.9899902
+2023-12-05      AMERICAN EXPRESS COMPANY        29      173.25  -0.5099945
+2023-12-06      AMERICAN EXPRESS COMPANY        30      170.68  -2.5700073
+2023-12-07      AMERICAN EXPRESS COMPANY        26      167.51  -3.1699982
+2023-12-08      AMERICAN EXPRESS COMPANY        22      168.62  1.1100006
+2023-12-09      AMERICAN EXPRESS COMPANY        8       168.43  -0.19000244
+2023-12-12      AMERICAN EXPRESS COMPANY        22      168.39  -0.039993286
+2023-12-13      AMERICAN EXPRESS COMPANY        27      171.04  2.649994
+2023-12-14      AMERICAN EXPRESS COMPANY        29      174.56  3.5200043
+2023-12-15      AMERICAN EXPRESS COMPANY        29      178.86  4.300003
+2023-12-16      AMERICAN EXPRESS COMPANY        17      180.51  1.6499939
+2023-12-19      AMERICAN EXPRESS COMPANY        20      182.76  2.25
+2023-12-20      AMERICAN EXPRESS COMPANY        41      185.75  2.9900055
+2023-12-21      AMERICAN EXPRESS COMPANY        23      180.65  -5.100006
+2023-12-22      AMERICAN EXPRESS COMPANY        29      184.79  4.1399994
+2023-12-23      AMERICAN EXPRESS COMPANY        10      185.57  0.78001404
+2023-12-27      AMERICAN EXPRESS COMPANY        28      185.96  0.3899994
+2023-12-28      AMERICAN EXPRESS COMPANY        41      187.06  1.0999908
+2023-12-29      AMERICAN EXPRESS COMPANY        27      187.8   0.7400055
+2023-12-30      AMERICAN EXPRESS COMPANY        21      187.34  -0.4600067
+Time taken: 65.994 seconds, Fetched: 250 row(s)
+
+
+SELECT
+    >     c.`Date_received` AS `date`,
+    >     c.company,
+    >     COUNT(c.`Complaint_ID`) AS complaint_count,
+    >     f.close_price AS close_price,
+    >     f.close_price - LAG(f.close_price) OVER (
+    >         PARTITION BY c.company
+    >         ORDER BY c.`Date_received`
+    >     ) AS close_price_difference
+    >     FROM
+    >         complaints_parquet c
+    >     JOIN
+    >         amex_findata f
+    >     ON
+    >         f.record_date = DATE_SUB(c.`Date_received`, 1)
+    >     WHERE
+    >         c.company = 'AMERICAN EXPRESS COMPANY'
+    >         AND c.`Date_received` BETWEEN '2023-01-01' AND '2023-12-31'
+    >     GROUP BY
+    >         c.`Date_received`, c.company, f.close_price
+    >     ORDER BY
+    >         c.`Date_received`;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = root_20241208094746_00eea63c-8f85-4216-a731-efd9e4269154
+Total jobs = 3
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]     
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20241208094746_00eea63c-8f85-4216-a731-efd9e4269154.log
+2024-12-08 09:47:51     Starting to launch local task to process map join;     maximum memory = 477626368
+2024-12-08 09:47:52     Dump the side-table for tag: 1 with group count: 3248 into file: file:/tmp/root/ab1c8a8d-8edc-4848-981a-071d5efb5f63/hive_2024-12-08_09-47-46_932_787337303573488333-1/-local-10007/HashTable-Stage-2/MapJoin-mapfile01--.hashtable
+2024-12-08 09:47:52     Uploaded 1 File to: file:/tmp/root/ab1c8a8d-8edc-4848-981a-071d5efb5f63/hive_2024-12-08_09-47-46_932_787337303573488333-1/-local-10007/HashTable-Stage-2/MapJoin-mapfile01--.hashtable (81858 bytes)
+2024-12-08 09:47:52     End of local task; Time Taken: 0.921 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 5
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 09:47:54,894 Stage-2 map = 100%,  reduce = 0%
+2024-12-08 09:47:55,903 Stage-2 map = 100%,  reduce = 40%
+2024-12-08 09:47:56,911 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_local1593678802_0002
+Launching Job 2 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 09:47:58,104 Stage-3 map = 100%,  reduce = 100%
+Ended Job = job_local1808238095_0003
+Launching Job 3 out of 3
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2024-12-08 09:47:59,275 Stage-4 map = 100%,  reduce = 100%
+Ended Job = job_local734799401_0004
+MapReduce Jobs Launched:
+Stage-Stage-2:  HDFS Read: 383939962 HDFS Write: 0 SUCCESS
+Stage-Stage-3:  HDFS Read: 78965518 HDFS Write: 0 SUCCESS
+Stage-Stage-4:  HDFS Read: 78965518 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 12.347 seconds
+
+
+SELECT
+    c.`date received` AS `date`,
+    c.company,
+    COUNT(c.`complaint id`) AS complaint_count,
+    f.close_price AS close_price,
+    f.close_price - LAG(f.close_price) OVER (
+        PARTITION BY c.company 
+        ORDER BY c.`date received`
+    ) AS close_price_difference
+    FROM
+        complaints_table c
+    JOIN
+        amex_findata f
+    ON
+        f.record_date = DATE_SUB(c.`date received`, 1)
+    WHERE
+        c.company = 'SYNCHRONY FINANCIAL'
+        AND c.`date received` BETWEEN '2023-01-01' AND '2023-12-31'
+    GROUP BY
+        c.`date received`, c.company, f.close_price
+    ORDER BY
+        c.`date received`;
+
+
+
+40.921 36.122 41.764 38.112 39.39 => normal table;
+
+SYNCHRONY FINANCIAL
+
+12.347 13.077 12.392 12.992, 12.906 => parquet table;
+
+
+
+
+
+
+query = f"""
+        WITH complaints_summary AS (
+            SELECT
+                c.date received AS date,
+                c.company,
+                COUNT(c.complaint id) AS complaint_count
+            FROM complaints_table c
+            WHERE c.company = '{company_name}'
+            AND c.date received BETWEEN '{start_date}' AND '{end_date}'
+            GROUP BY c.date received, c.company
+        ),
+        financial_data AS (
+            SELECT
+                f.record_date,
+                f.close_price,
+                f.close_price - LAG(f.close_price) OVER (
+                    PARTITION BY f.record_date 
+                    ORDER BY f.record_date
+                ) AS close_price_difference
+            FROM {company_database_name[company_name]} f
+        )
+        SELECT
+            cs.date,
+            cs.company,
+            cs.complaint_count,
+            fd.close_price,
+            fd.close_price_difference
+        FROM complaints_summary cs
+        JOIN financial_data fd
+        ON fd.record_date = DATE_SUB(cs.date, 1)
+        ORDER BY cs.date
+        """
+
+
+query = f"""
+        SELECT
+            c.date received AS date,
+            c.company,
+            COUNT(c.complaint id) AS complaint_count,
+            f.close_price AS close_price,
+            f.close_price - LAG(f.close_price) OVER (
+                PARTITION BY c.company 
+                ORDER BY c.date received
+            ) AS close_price_difference
+        FROM
+            complaints_table c
+        JOIN
+            {company_database_name[company_name]} f
+        ON
+            f.record_date = DATE_SUB(c.date received, 1)
+        WHERE
+            c.company = '{company_name}'
+            AND c.date received BETWEEN '{start_date}' AND '{end_date}'
+        GROUP BY
+            c.date received, c.company, f.close_price
+        ORDER BY
+            c.date received
+        """
