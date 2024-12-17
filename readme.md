@@ -19,6 +19,8 @@ This repository provides a Dockerized setup for deploying **Hadoop** and **Hive*
 
 - **Docker**: Ensure Docker is installed and running on your system.
 - **Docker Compose**: Used to orchestrate the services.
+- Download companies stock data prices files using Google Sheets function: =GOOGLEFINANCE(company_name, price, DATE(from), DATE(to), frequency).
+- Download Complaints.csv file from CFPB Complaint Database: Includes consumer complaints related to various financial issues: credit reporting, debt collection, mortgages, etc 4.29 GB, ~11970000 rows.
 
 ## Installation
 
