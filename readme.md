@@ -2,6 +2,8 @@
 
 This repository provides a Dockerized setup for deploying **Hadoop** and **Hive** to handle large-scale data storage and processing. It is designed to facilitate efficient data analysis for applications such as stock forecasting by leveraging **HDFS** (Hadoop Distributed File System) and **Hive's data warehousing capabilities**. Additionally, it includes scripts and configurations for converting raw data into **Parquet format**, optimizing both storage and query performance.
 
+Web App Repository => [Visit](https://github.com/SudhanshuGulhane/Stock_Forecaster_WebApp)
+
 ## Features
 
 - **Dockerized Hadoop and Hive Setup**:
